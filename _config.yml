@@ -30,3 +30,6 @@ theme: minima
 
 # Custom setting
 permalink: /:year/:month/:day/:title/
+
+# gems:
+#    - jekyll-slim
