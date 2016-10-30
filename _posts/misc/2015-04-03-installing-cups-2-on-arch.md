@@ -4,7 +4,7 @@ categories:   misc
 tags:         [arch, CUPS, linux, printer]
 title:        installing CUPS 2 on Arch
 description:  description
-feature_img:  2015/04/cups-large.gif
+feature_img:  2015/04/cups.png
 ---
 
 We need the packages from the repository community 
