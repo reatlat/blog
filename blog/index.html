@@ -14,7 +14,7 @@ title: Blog
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% if site.disqus_short_name %} | 
-    <a class='disqus-comment-count' data-disqus-url="{{ site.baseurl }}{{ post.url }}" href="{{ site.baseurl }}{{ post.url }}#disqus_thread"><!--count-->0 Comments</a>
+    <a class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ post.url }}" href="{{ site.url }}{{ post.url }}#disqus_thread"><!--count-->0 Comments</a>
     {% endif %}
     {% if post.categories %} | 
     <a href="{{ site.baseurl }}{{ site.category_page }}#{{ post.categories[0] | slugify }}" class="post-tag">{% icons slack %}  {{ post.categories[0] }}</a>

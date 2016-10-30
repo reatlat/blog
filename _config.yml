@@ -12,8 +12,8 @@ kramdown:
 
 # permalink: pretty
 permalink: /blog/:categories/:year/:month/:day/:title/
-port: 4000
-host: 192.168.10.11
+# port: 4000
+# host: 192.168.10.11
 
 title: re[at]lat's personal scratchpad
 email: your-email@domain.com
@@ -26,7 +26,7 @@ github_username:  reatlat
 # google_analytics: xxxxxx
 disqus_short_name: 'reatlat' # leave blank if you don't want disqus
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
-# url: "http://blog.reatlat.net" # the base hostname & protocol for your site
+url: "http://reatlat.net" # the base hostname & protocol for your site
 version: 2.0.0 beta
 paginate: 5
 paginate_path: '/blog/page:num'
