@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      | <a class='disqus-comment-count' data-disqus-url="{{ site.baseurl }}{{ page.url }}" href="{{ site.baseurl }}{{ page.url }}#disqus_thread"><!--count-->0 Comments</a>
+      | <a href="{{ site.baseurl }}{{ site.category_page }}#{{ page.categories[0] | slugify }}" class="post-tag">{% icons slack %} {{ page.categories[0] }}</a>
+      {% if page.tags %} | 
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{% icons tag %} {{ tag }}</a>
+      {% endfor %}
+      {% endif %}
+    </p>
+
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {% if page.feature_img %}
+      <div class="post-featured_img-container">
+        <img class="post-featured_img" src="{% asset_path '{{ page.feature_img }}' %}">
+      </div><!-- /.post-featured_img -->
+    {% endif %}
+    {{ content }}
+    <p class="post-content_note">
+      <b>Note:</b> English is not my native language, if you see any typo or grammar mistake please contact me and I will correct it as soon as I can.
+    </p>
+  </div>
+
+  {% if site.disqus_short_name %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>

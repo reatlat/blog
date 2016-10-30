@@ -1,0 +1,83 @@
+@mixin img_right() {
+  min-width: 300px;
+    float: right;
+    height: initial !important;
+    margin: 0 0 .75rem .75rem !important;
+}
+
+@mixin img_left() {
+  min-width: 300px;
+    float: left;
+    height: initial !important;
+    margin: 0 .75rem .75rem 0 !important;
+}
+
+.left_w10 {
+    width: 10%;
+    @include img_left();
+}
+
+.left_w20 {
+    width: 20%;
+    @include img_left();
+}
+
+.left_w25 {
+    width: 25%;
+    @include img_left();
+}
+
+.left_w30 {
+    width: 30%;
+    @include img_left();
+}
+
+.left_w40 {
+    width: 40%;
+    @include img_left();
+}
+
+.left_w50 {
+    width: 50%;
+    @include img_left();
+}
+
+.left_w75 {
+    width: 75%;
+    @include img_left();
+}
+
+.right_w10 {
+    width: 10%;
+    @include img_right();
+}
+
+.right_w20 {
+    width: 20%;
+    @include img_right();
+}
+
+.right_w25 {
+    width: 25%;
+    @include img_right();
+}
+
+
+.right_w30 {
+    width: 30%;
+    @include img_right();
+}
+.right_w40 {
+    width: 40%;
+    @include img_right();
+}
+
+.right_w50 {
+    width: 50%;
+    @include img_right();
+}
+
+.right_w75 {
+    width: 75%;
+    @include img_right();
+}

@@ -1,0 +1,40 @@
+$red:        #ac4142;
+$orange:     #d28445;
+$yellow:     #f4bf75;
+$green:      #90a959;
+$cyan:       #75b5aa;
+$blue:       #6a9fb5;
+$magenta:    #aa759f;
+$brown:      #8f5536;
+$default:    #505050;
+
+$white:      #FFFFFF;
+$lightgrey:  #EEEEEE;
+$black:      #000000;
+
+$theme-color:#37A000;
+
+$bg-dark:    #292929;
+$bg-light:   #E6E6E6;
+$link:       $theme-color;
+$text-dark:  #333333;
+$text-light: #CCCCCC;
+
+$head-color: #FFFFFF;
+$contrast:   #FF4333;
+
+$font-first: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+$font-second: 'Quattrocento Sans', 'Helvetica Neue', Arial, sans-serif;
+
+/* Layout */
+$reverse-layout: true;
+$overlay-sidebar: false;
+
+/* Mixins */
+@mixin transit($elem: all, $time: .3s, $effect: ease) {
+  transition: $elem $time $effect;
+}
+
+@mixin material-shadow() {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
+}

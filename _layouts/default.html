@@ -1,0 +1,66 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <div class="main_wrapper">
+      <div class="main_wrapper-inner">
+        
+        {% include header.html %}
+
+        <main class="content_wrapper" aria-label="Content">
+          <div class="content_wrapper-inner">
+
+            {{ content }}
+
+          </div>
+        </main>
+
+      {% include footer.html %}
+      </div><!-- /.main_wrapper-inner -->
+    </div><!-- /.main_wrapper -->
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if (target === toggle) {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+          } else if (checkbox.checked && !sidebar.contains(target)) {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+          }
+        }, false);
+      })(document);
+    </script>
+    <script>
+      (function(){
+          document.addEventListener('DOMContentLoaded', function(){
+              var children = document.getElementsByClassName('sidebar_changing-keywords')[0].children;
+              var length = children.length;
+              var idx = 0;
+              setInterval(function(){
+                  children[idx].className = "hidden";
+                  idx = (idx + 1) % length;
+                  children[idx].className = "visible";
+              }, 2000);
+          });
+      })();
+    </script>
+    {% include icons.html %}
+  </body>
+
+</html>

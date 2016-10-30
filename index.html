@@ -1,23 +1,33 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
+<div class="home-page">
+  <div class="home-page_inner">
+  
+    <div class="home_image_side light">
+      <img src="{% asset_path jedi_lego.png %}">
+    </div>
+    
+    <nav class="home-page_nav">
+      {% for nav in site.nav %}
+        {% assign is_relative = nav[1][0] | slice: 0 %}
+        {% assign url = nav[1][0] %}
+        {% if is_relative == '/' %}
+          {% assign url = nav[1][0] | prepend: site.baseurl %}
+        {% endif %}
 
-  <h1 class="page-heading">Posts</h1>
+        {% assign sub_len = nav[1] | size | minus: 1 %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="home-page_nav-item">
+          <a class="home-page_nav-item_link" href="{{ url }}">
+            {{ nav[0] }}
+          </a>
+        </span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      {% endfor %}
+    </nav>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>

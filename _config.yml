@@ -1,35 +1,106 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+---
+gems:
+  - jekyll-assets
+  - bourbon
+  - jekyll-paginate
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: info@reatlat.net
+markdown: kramdown
+kramdown:
+  input: GFM
+  # parse_block_html: true
+  # html_to_native: true
+
+# permalink: pretty
+permalink: /blog/:categories/:year/:month/:day/:title/
+port: 4000
+host: 192.168.10.11
+
+title: re[at]lat's personal scratchpad
+email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.reatlat.net" # the base hostname & protocol for your site
 twitter_username: reatlat
 github_username:  reatlat
+# google_analytics: xxxxxx
+disqus_short_name: 'reatlat' # leave blank if you don't want disqus
+# baseurl: "/blog" # the subpath of your site, e.g. /blog
+# url: "http://blog.reatlat.net" # the base hostname & protocol for your site
+version: 2.0.0 beta
+paginate: 5
+paginate_path: '/blog/page:num'
 
-# Build settings
-markdown: kramdown
-theme: minima
+sass:
+  style: compressed
 
-# Custom setting
-permalink: /:year/:month/:day/:title/
+assets:
+  compress:
+    css: true
+    js:  true
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/posts
+  css_compressor: sass
+  js_compressor:  uglifier
+  prefix: "/assets"
+  # digest: true
+  features:
+    liquid: true
 
-# gems:
-#    - jekyll-slim
+extlinks:
+  attributes: {rel: nofollow, target: _blank}
+  # rel_exclude: ['host1.com', 'host2.net']
+  
+# About/contact
+author:
+  name: re[at]lat
+  description: >
+            A passionate  <span class="sidebar_changing-keywords">
+            <b class="visible">developer,</b>
+            <b class="hidden">researcher,</b>
+            <b class="hidden">lifelong learner,</b>
+            <b class="hidden">blogger,</b>
+            <b class="hidden">cook,</b>
+            </span>
+            <br>learning to be a giant.
+  gravatar: bd402695f332dac5a9011bf186561c6e # md5 hash of your email address
+  contact:
+    Linkedin:  https://www.linkedin.com/in/reatlat
+    GitHub:    https://github.com/reatlat
+    Twitter:   https://twitter.com/reatlat
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Projects: 
+    - '/projects/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - .gitignore

@@ -1,0 +1,327 @@
+/*
+ * Sidebar
+ *
+ * The sidebar is the drawer, the item we are toggling with our handy hamburger
+ * button in the corner of the page.
+ *
+ * This particular sidebar implementation was inspired by Chris Coyier's
+ * "Offcanvas Menu with CSS Target" article, and the checkbox variation from the
+ * comments by a reader. It modifies both implementations to continue using the
+ * checkbox (no change in URL means no polluted browser history), but this uses
+ * `position` for the menu to avoid some potential content reflow issues.
+ *
+ * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
+ */
+
+/* Style and "hide" the sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 20rem;
+  visibility: visible;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: $font-first;
+  font-size: .875rem; /* 15px */
+  color: $text-light;
+  user-select: none;
+  @include transit();
+
+  @if $reverse-layout {
+    left: auto;
+    right: -20rem;
+    // @media (min-width: 64rem) {
+    //   right: 0;
+    //   visibility: visible;
+    // }
+  } @else {
+    // @include transition(left .3s ease-in-out);
+    left: -20rem;
+    right: auto;
+    // @media (min-width: 64rem) {
+    //   left: 0;
+    //   visibility: visible;
+    // }
+  }
+
+  background-color: $bg-dark;
+}
+
+
+@media (min-width: 30em) {
+  .sidebar {
+    font-size: .75rem; /* 14px */
+  }
+}
+
+/* Sidebar content */
+.sidebar a {
+  font-weight: normal;
+  color: $white;
+  text-decoration:none;
+  @include transit();
+  &:hover,
+  &:focus {
+    text-decoration:none;
+    color: $text-light;
+  }
+}
+.sidebar-item {
+  padding: 1rem;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  .sidebar-item__rebel_vs_empire{
+    @include transit();
+    &:hover{
+      .side_toggle{
+        @include transit();
+        opacity: .2;
+      }
+    }
+    .side_toggle{
+      cursor: pointer;
+      @include transit();
+      opacity: .6;
+      &:hover {
+        @include transit();
+        opacity: 1;
+      }
+      &.dark_side{
+        float: left;
+      }
+      &.light_side{
+        float: right;
+      }
+      .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        stroke: $white;
+        fill: $white;
+      }
+    }
+  }
+  .sidebar-personal-info {
+    .sidebar-personal-info__section {
+      .sidebar-personal-info__section__gravatar {
+        img {
+          margin: 30px auto 50px;
+          width: 150px;
+          border-radius: 360px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  border-bottom: 1px solid rgba($white,.1);
+}
+.sidebar-nav-item {
+  display: block;
+  padding: .5rem 1rem;
+  border-top: 1px solid rgba($white,.1);
+}
+.sidebar-nav-item-sub {
+  &:before {
+    content: "";
+    padding-left: 1em;
+  }
+  font-size: 85%;
+  line-height: 85%;
+}
+a.sidebar-nav-item {
+  text-decoration: none;
+  color: $text-light;
+  &.active,
+  &:hover,
+  &:focus {
+    color: lighten($text-light, 15%);
+    background-color: rgba($white,.1);
+    border-color: transparent;
+  }
+}
+
+@media (min-width: 48em) {
+  .sidebar-item {
+    padding: 1.5rem;
+  }
+  .sidebar-nav-item {
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
+.sidebar-checkbox {
+  position: absolute;
+  // opacity: 0;
+  @include prefixer(user-select, none, webkit moz spec);
+}
+
+/* Style the `label` that we use to target the `.sidebar-checkbox` */
+.sidebar-toggle {
+  position: fixed;
+  z-index:11;
+  // position: absolute;
+  top:  0;
+  @if $reverse-layout {
+    left: auto;
+    right: 0;
+  } @else {
+    left: 0;
+    right: auto;
+  }
+  display: block;
+  padding: 1.3rem;
+  color: $theme-color;
+  background-color: $bg-light;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.sidebar-toggle:before {
+  display: inline-block;
+  width: 1rem;
+  height: .75rem;
+  content: "";
+  @include background-image(
+    linear-gradient(
+      to bottom,
+      $theme-color,
+      $theme-color 20%,
+      $bg-light 20%,
+      $bg-light 40%,
+      $theme-color 40%,
+      $theme-color 60%,
+      $bg-light 60%,
+      $bg-light 80%, 
+      $theme-color 80%, 
+      $theme-color 100%
+      )
+    );
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: $white;
+  background-color: $theme-color;
+}
+
+.sidebar-toggle:active:before,
+#sidebar-checkbox:focus ~ .sidebar-toggle:before,
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  @include background-image(
+    linear-gradient(
+      to bottom,
+      $bg-light, 
+      $bg-light 20%, 
+      $theme-color 20%, 
+      $theme-color 40%, 
+      $bg-light 40%, 
+      $bg-light 60%, 
+      $theme-color 60%, 
+      $theme-color 80%, 
+      $bg-light 80%, 
+      $bg-light 100%
+      )
+    );
+}
+
+@media (min-width: 30.1em) {
+  .sidebar-toggle {
+    position: fixed;
+  }
+}
+
+@media print {
+  .sidebar-toggle {
+    display: none;
+  }
+}
+
+/* Slide effect
+ *
+ * Handle the sliding effects of the sidebar and content in one spot, seperate
+ * from the default styles.
+ *
+ * As an a heads up, we don't use `transform: translate3d()` here because when
+ * mixed with `position: fixed;` for the sidebar toggle, it creates a new
+ * containing block. Put simply, the fixed sidebar toggle behaves like
+ * `position: absolute;` when transformed.
+ *
+ * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
+ */
+
+.main_wrapper,
+.sidebar,
+.sidebar-toggle {
+  @include prefixer(backface-visibility, hidden, webkit ms spec);
+}
+.main_wrapper,
+.sidebar-toggle {
+  @include transit(transform);
+}
+
+#sidebar-checkbox:checked + .sidebar {
+  z-index: 10;
+  visibility: visible;
+}
+
+#sidebar-checkbox:checked ~ .main_wrapper {
+  @include transform(translateX(if($overlay-sidebar,0,if($reverse-layout, -20rem, 20rem))));
+}
+
+#sidebar-checkbox:checked ~ .sidebar {
+  @include transform(translateX(if($reverse-layout, -20rem, 20rem)));
+  @if $overlay-sidebar {
+    box-shadow: .25rem 0 .5rem rgba($black,.1);
+    @if $reverse-layout { box-shadow: -.25rem 0 .5rem rgba($black,.2); }
+  }
+}
+
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  @include transform(translateX(if($reverse-layout, -20rem, 20rem)));
+  @if $overlay-sidebar {
+    box-shadow: 0 0 0 .25rem $white;
+  }
+}
+
+.sidebar-personal-info {
+  .sidebar-personal-info-section {
+    &:not(:first-of-type) {
+      margin-top: .75rem;
+    }
+    line-height: 1rem;
+    a, strong {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.sidebar_changing-keywords { 
+  position: relative;
+  white-space: nowrap;
+  b {
+      color: #fff;
+      position: absolute;
+      left: 0;
+      top: .3rem;
+      display: inline-block;
+      opacity: 0;
+      @include transit();
+      &.hidden {
+
+      }
+      &.visible {
+        opacity:1;
+        top:0;
+      }
+  }
+}

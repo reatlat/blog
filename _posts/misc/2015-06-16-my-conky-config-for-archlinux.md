@@ -1,0 +1,156 @@
+---
+layout:       post
+categories:   misc
+tags:         [conky, linux, arch]
+title:        My conky config for ArchLinux
+description:  description
+feature_img:  2015/06/conky.png
+---
+
+This is my simple conky config for Arch Linux hp620 
+
+By this confc i can monitoring satus of my laptop
+
+```config
+######################
+# - Conky settings - #
+######################
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Ubuntu:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+own_window_class Conky
+own_window yes
+own_window_type normal
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+alignment top_right
+gap_x 25
+gap_y 40
+minimum_size 182 0
+maximum_width 182
+
+default_bar_size 60 5
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+ 
+default_color cccccc
+
+color0 white
+color1 E07A1F
+color2 white
+
+
+TEXT
+SYSTEM ${hr 2}
+${goto 6}${voffset 6}${font conkycolorslogos:size=32}a${font}${goto 55}${voffset -25}$machine
+${goto 55}Kernel: ${kernel} 
+
+${hr 2}
+
+#CPU Freq ${hr 2}
+#${goto 6}${voffset 4}${font conkycolors:size=16}E${font}${voffset -4}${goto 32}Frequency: ${alignr}${freq_g (1)} GHz
+#
+#
+CPU Usage ${hr 2}
+${goto 6}${font conkycolors:size=16}A${font}${voffset -4}${goto 32}CPU1: ${cpu cpu0}% ${alignr}${cpubar cpu0 8,60}
+${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU1: ${cpu cpu1}% ${alignr}${cpubar cpu1 8,60} 
+${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU2: ${cpu cpu2}% ${alignr}${cpubar cpu2 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU3: ${cpu cpu3}% ${alignr}${cpubar cpu3 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU4: ${cpu cpu4}% ${alignr}${cpubar cpu4 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU5: ${cpu cpu5}% ${alignr}${cpubar cpu5 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU6: ${cpu cpu6}% ${alignr}${cpubar cpu6 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU7: ${cpu cpu7}% ${alignr}${cpubar cpu7 8,60}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU8: ${cpu cpu8}% ${alignr}${cpubar cpu8 8,60}
+#CPU Usage ${hr 2}
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU1: ${cpu cpu1}%${alignr}CPU2: ${cpu cpu2}%
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU3: ${cpu cpu3}%${alignr}CPU4: ${cpu cpu4}%
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU5: ${cpu cpu5}%${alignr}CPU6: ${cpu cpu6}%
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}CPU7: ${cpu cpu7}%${alignr}CPU8: ${cpu cpu8}%
+
+CPU Temperatures ${hr 2}
+${goto 6}${voffset 4}${font conkycolors:size=16}C${font}${voffset -4}${goto 32}CPU:${color #FCAF3E} ${hwmon 0 temp 2}°C$color${alignr}NB:${color #FCAF3E} ${hwmon 0 temp 3}°C$color
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}Core0:${alignr}${color #FCAF3E}${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'} $color
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}Core1:${alignr}${color #FCAF3E}${execi 30 sensors | grep 'Core 1' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'} $color
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}Core2:${alignr}${color #FCAF3E}${execi 30 sensors | grep 'Core 2' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'} $color
+#${goto 6}${voffset 4}${font conkycolors:size=16}c${font}${voffset -4}${goto 32}Core:${alignr}${color #FCAF3E}${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | sed 's/\.0//g'} $color
+
+Misc Info ${hr 2}
+#${goto 6}${voffset 4}${font conkycolors:size=16}d${font}${voffset -4}${goto 32}GPU Temp: ${alignr}${color #FCAF3E}${exec nvidia-settings -q GPUCoreTemp | grep Attribute | cut -d ' ' -f 6 | cut -c 1-2} ?C$color
+${goto 6}${voffset 4}${font conkycolors:size=16}g${font}${voffset -4}${goto 32}Memory: ${mem} ${alignr}${membar 8,60}
+${goto 6}${voffset 4}${font conkycolors:size=16}i${font}${voffset -4}${goto 32}Disk: ${diskio}${alignr}${diskiograph 8,60 F57900 FCAF3E}
+${goto 6}${voffset 4}${font conkycolors:size=16}i${font}${voffset -4}${goto 32}Swap: $swapperc% ${alignr}${swapbar 8,60}
+${goto 6}${voffset 4}${font conkycolors:size=16}o${font}${voffset -4}${goto 32}Uptime: ${alignr}${uptime}
+${goto 6}${voffset 4}${font conkycolors:size=16}C${font}${voffset -4}${goto 32}Processes: ${alignr}$processes ($running_processes running)
+${goto 7.5}${voffset 4}${font Poky:size=15}a${font}${goto 32}${voffset -10}Highest: ${alignr 13}CPU${alignr}RAM
+${goto 32}${voffset -5.5}${hr 1}
+${voffset -1}${goto 32}${top name 1} ${goto 124}${top cpu 1}${alignr }${top mem 1}
+${voffset -1}${goto 32}${top name 2} ${goto 124}${top cpu 2}${alignr }${top mem 2}
+${voffset -1}${goto 32}${top name 3} ${goto 124}${top cpu 3}${alignr }${top mem 3}
+${voffset -1}${goto 32}${top name 4} ${goto 124}${top cpu 4}${alignr }${top mem 4}
+
+#Time & Date ${hr 2}
+#${font Arial Black:size=26}${alignc}${time %H:%M}${font}
+#${alignc}${time %A, %B %d, %Y}
+#
+HDD ${hr 2}
+#${font conkycolors:size=15}i${font}${voffset -5}${goto 32}HDD temperature:${alignr}${color #FCAF3E}${exec hddtemp /dev/sda -n --unit=C} ?C$color
+${font conkycolors:size=16}i${font} ${voffset -5}File System
+${voffset 4}${fs_free /}/${fs_size /} ${alignr}${fs_bar 8,60 /}
+${font conkycolors:size=16}i${font} ${voffset -5}Home
+${voffset 4}${fs_free /home}/${fs_size /home} ${alignr}${fs_bar 8,60 /home}
+${font conkycolors:size=16}i${font} ${voffset -5}Windows 7
+${voffset 4}${fs_free /mnt/windows}/${fs_size /mnt/windows} ${alignr}${fs_bar 8,60 /mnt/windows}
+
+#Battery: ${alignr}${battery}
+#${battery_bar}
+#
+Network ${hr 2}
+${if_up wls1}
+${font conkycolors:size=14}k${font}${goto 32}${voffset -8}SSID: ${wireless_essid wls1}
+${goto 32}Signal: ${wireless_link_qual wls1}% ${alignr}${wireless_link_bar 8,60 wls1}
+${voffset 4}${font conkycolors:size=14}x${font}${goto 32}${voffset -6}Up: ${upspeed wls1}${font} ${alignr}${upspeedgraph wls1 8,60 F57900 FCAF3E}
+${goto 32}Total: ${totalup wls1}
+${voffset 4}${font conkycolors:size=14}u${font}${goto 32}${voffset -6}Down: ${downspeed wls1}${font} ${alignr}${downspeedgraph wls1 8,60 F57900 FCAF3E}
+${goto 32}Total: ${totaldown wls1}
+${voffset 4}${font conkycolors:size=13}A${font}${goto 32}${voffset -8}Local IP: ${alignr}${addr wls1}
+
+# |--enp3s0f0
+${else}${if_up enp3s0f0}
+${voffset -13}${font conkycolors:size=14}x${font}${goto 32}${voffset -6}Up: ${upspeed enp3s0f0}${font} ${alignr}${upspeedgraph enp3s0f0 8,60 F57900 FCAF3E}
+${goto 32}Total: ${totalup enp3s0f0}
+${voffset -2}${font conkycolors:size=14}u${font}${goto 32}${voffset -6}Down: ${downspeed enp3s0f0}${font} ${alignr}${downspeedgraph enp3s0f0 8,60 F57900 FCAF3E}
+${goto 32}Total: ${totaldown enp3s0f0}
+${voffset -2}${font conkycolors:size=13}A${font}${goto 32}${voffset -4}Local IP: ${alignr}${addr enp3s0f0}
+
+# |--PPP0
+${endif}${else}${if_up ppp0}
+${voffset -13}${font conkycolors Solid:size=14}q${font}${goto 32}${voffset -6}Up: ${upspeed ppp0}${font} ${alignr}${upspeedgraph ppp0 8,60 F57900 FCAF3E}
+${goto 32}Total: ${totalup ppp0}
+${voffset -2}${font conkycolors Solid:size=14}Q${font}${goto 32}${voffset -6}Down: ${downspeed ppp0}${font} ${alignr}${downspeedgraph ppp0 8,60 F57900 FCAF3E}
+
+${goto 32}Total: ${totaldown ppp0}
+${voffset -2}${font Poky:size=13}w${font}${goto 32}${voffset -4}Local IP: ${alignr}${addr ppp0}
+${endif}${else}${voffset 4}${font PizzaDude Bullets:size=12}4${font}${goto 32}Network Unavailable${endif}${endif}
+${hr 2}
+```

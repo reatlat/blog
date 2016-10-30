@@ -1,0 +1,45 @@
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba($bg-dark,.5);
+    transition: all 250ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba($link,.5);
+    transition: all 250ms ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba($link,.9);
+    transition: all 250ms ease-in-out;
+}
+
+/* Text selection */
+
+::selection {
+    background: lighten($bg-dark,15%);
+    color: #fff
+}
+
+::-moz-selection {
+    background: lighten($bg-dark,15%);
+    color: #fff
+}
+
+::-webkit-selection {
+    background: lighten($bg-dark,15%);
+    color: #fff
+}
