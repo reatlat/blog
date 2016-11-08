@@ -293,3 +293,10 @@ article {
         text-transform: capitalize;
     }
 }
+
+.pagination{
+        padding: 2rem 0 0;
+        .pagination-item + .pagination-item{
+            margin-left: 1rem;
+        }
+}
