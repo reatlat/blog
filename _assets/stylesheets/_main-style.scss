@@ -166,7 +166,13 @@ h6 {
         position: relative;
         max-width: 48rem;
         .content_wrapper {
-            padding: 4rem 1rem;
+            padding: 4rem 1rem 6rem;
+            @media (min-width: 480px) {
+                padding: 4rem 1rem 5rem;
+            }
+            @media (min-width: 768px) {
+                padding: 4rem 1rem;
+            }
             // max-width: 48rem;
             // padding: 3rem 6rem;
         }
@@ -241,6 +247,21 @@ h6 {
     font-size: .8rem;
     .site-footer_inner {
         padding: 0 1rem;
+        .site-footer__page_nav {
+            .site-footer__page_nav-item {
+                a.site-footer__page_nav-item_link {
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+}
+
+.site-footer__page_nav-item + .site-footer__page_nav-item {
+    &:before {
+        opacity: .5;
+        content: "|";
+        margin: 0 .2rem;
     }
 }
 
@@ -294,9 +315,9 @@ article {
     }
 }
 
-.pagination{
-        padding: 2rem 0 0;
-        .pagination-item + .pagination-item{
-            margin-left: 1rem;
-        }
+.pagination {
+    padding: 2rem 0 0;
+    .pagination-item + .pagination-item {
+        margin-left: 1rem;
+    }
 }

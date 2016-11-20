@@ -1,11 +1,16 @@
 <head>
+  {% if page.noindex %}
+    <meta content="noindex" name="robots">
+  {% endif %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }}
+    {% elsif page.title == "Search" %}
+      {{ page.title }} on {{ site.title }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}

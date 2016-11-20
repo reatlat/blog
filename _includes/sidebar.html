@@ -74,15 +74,10 @@
 
   </nav>
 
-  <div class="sidebar-item">
-    <p>
-    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-    </p>
-  </div>
-
-  <div class="sidebar-item">
-    <p>
-    Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="https://pages.github.com/">GitHub Pages</a>
-    </p>
+  <div class="sidebar-item sidebar_search-box">
+    <form action="{{ full_base_url }}/search/" method="GET">
+      <input class="search-box_input" placeholder="Search..." type="text" name="q" />
+      <button class="search-box_button" type="submit">{% icons search %}</button>
+    </form>
   </div>
 </div>

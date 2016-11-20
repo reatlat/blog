@@ -114,8 +114,50 @@
       }
     }
   }
-}
+  &.sidebar_search-box{
+    form{
+      position:relative;
+      width:100%;
+      display:inline-block;
+    }
+    .search-box_input{
+      width:15rem;
+      padding:.2rem 2rem .2rem .6rem;
+      display:inline-block;
+      outline: none;
+      background: transparent;
+      border: 1px solid rgba($white,.1);
+      &:focus{
+        border: 1px solid rgba($white,1);
+      } 
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-transition-delay: 31556926s;
+        -webkit-transition: color 31556926s ease-out, background-color 31556926s ease-out;
+      }
+    }
+    .search-box_button{
+      background: transparent;
+      position: absolute;
+      border: none;
+      right: 0;
+      margin: 0;
+      top: 0;
+      height: 1.6rem;
+      width: 2.6rem;
+      z-index: 5;
+      padding: 0;
+      outline: none;
+      .icon{
+        height:1.5rem;
+        width:1.2rem;
+      }
 
+    }
+  }
+}
 /* Sidebar nav */
 .sidebar-nav {
   border-bottom: 1px solid rgba($white,.1);

@@ -6,3 +6,4 @@ _drafts
 *.swp
 .jekyll-assets-cache
 .asset-cache
+.rvmrc

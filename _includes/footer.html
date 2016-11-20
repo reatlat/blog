@@ -1,8 +1,36 @@
 <footer class="site-footer">
 
   <div class="site-footer_inner">
+    {% if page.title != "Home" %}
     <p>
-      This <a href="{{ full_base_url }}/" {% if page.title != "Home" %}rel="nofollow"{% endif %}>website</a> is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>. 
+      <nav class="site-footer__page_nav">
+        {% for nav in site.nav %}
+          {% assign is_relative = nav[1][0] | slice: 0 %}
+          {% assign url = nav[1][0] %}
+          {% if is_relative == '/' %}
+            {% assign url = nav[1][0] | prepend: site.baseurl %}
+          {% endif %}
+
+          {% assign sub_len = nav[1] | size | minus: 1 %}
+
+          <span class="site-footer__page_nav-item">
+            <a class="site-footer__page_nav-item_link" href="{{ url }}">{{ nav[0] }}</a>
+          </span>
+
+        {% endfor %}
+
+          <span class="site-footer__page_nav-item">
+            <a class="site-footer__page_nav-item_link" href="{{ full_base_url }}/search/">Search</a>
+          </span>
+
+      </nav>
+    </p>
+    {% endif %}
+      
+    <p>
+      This <a href="{{ full_base_url }}/" {% if page.title != "Home" %}rel="nofollow"{% endif %}>website</a> is licensed under a <a href='http://creativecommons.org/licenses/by-sa/4.0/' rel='license' target='_blank'>Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      <br>
+      Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="https://pages.github.com/">GitHub Pages</a>
     </p>
     </div>
 
