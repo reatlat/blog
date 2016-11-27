@@ -23,6 +23,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: reatlat
 github_username:  reatlat
+facebook:
+  app_id: 206701496449716
 # google_analytics: xxxxxx
 disqus_short_name: 'reatlat' # leave blank if you don't want disqus
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
