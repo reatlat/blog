@@ -3,8 +3,12 @@ layout:       post
 categories:   development
 tags:         [javascript, fancybox2, blogger, blogspot]
 title:        Add fancyBox2 to Blogger/BlogSpot
-description:  description
 feature_img:  2015/11/add-fancybox2-to-blogger-blogspot-0.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 If you use Blogger platform by default you have lightBox.

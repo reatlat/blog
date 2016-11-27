@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [conky, linux, arch]
 title:        My conky config for ArchLinux
-description:  description
 feature_img:  2015/06/conky.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 This is my simple conky config for Arch Linux hp620 

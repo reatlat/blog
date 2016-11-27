@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [fix, hardware, mouse, repair, soldering]
 title:        Replacing a mouse button
-description:  description
 feature_img:  2015/08/replacing-mouse-button-0.jpg
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Logitech Mouse Model M-RCQ142 White was purchased by mistake =) I wanted to buy the same black but mistakenly bought white =)

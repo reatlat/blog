@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [arch, linux, pacman, yaourt]
 title:        Yet AnOther User Repository Tool
-description:  description
 feature_img:  2015/04/pot-yaourt.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Archlinux still used console package manager pacman. Although attempts to create a GUI console remains the most convenient way to install / uninstall / update program in Archlinux.

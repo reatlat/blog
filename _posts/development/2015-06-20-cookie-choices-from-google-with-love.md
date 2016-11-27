@@ -3,8 +3,12 @@ layout:       post
 categories:   development
 tags:         [cookies, google, javascript]
 title:        Cookie Choices from Google with love =)
-description:  description
 feature_img:  2015/06/cookies.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Google created for us a wonderful simple and easy JavaScript to alert users that the site uses cookies.

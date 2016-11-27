@@ -3,8 +3,12 @@ layout:       post
 categories:   general
 tags:         [blog, jekyll, blogger, ruby, github]
 title:        Thank you Blogger by Google and good bye
-description:  description
 feature_img:  2016/10/blogger-to-jekyll.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 I recently made the move from [Blogger][0] to [Jekyll][1], hosted on [Github Pages][2]. It was a pretty pleasant conversion too, as Jekyll has a good amount of documenation and support.

@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [lamp, linux, apache, mysql, php, arch]
 title:        LAMP — Linux + Apache + MySQL + PHP
-description:  description
 feature_img:  2015/06/lamp.gif
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Apache - the most popular web server. Its task like any other Web server - to send content to client requests. Apache has a great functionality through plug-ins.

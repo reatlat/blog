@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [arch, bash, fan, hp620, linux, script, tweak]
 title:        Fan control script for hp620
-description:  description
 feature_img:  2015/03/cooling-fan-inside-laptop.jpg
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Hello world! Today I share a little note to my old laptop hp620. The fact that Arch is not correctly manages the cpu fan, and constantly running at high speed and creates a lot of noise.

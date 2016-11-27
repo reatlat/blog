@@ -17,6 +17,31 @@
   </title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  <!-- Open Graph Meta Tags -->
+    <meta content="{{ site.title }}" property="og:site_name">
+    <meta content="{{ page.title }}" property="og:title">
+    {% if page.layout == 'post' %}
+      <meta content="article" property="og:type">
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+    <meta content="{{ page.url | replace:'index.html','' | prepend: full_base_url }}" property="og:url">
+    <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
+    {% if page.feature_img.nil? %}
+      <meta content="http://s.gravatar.com/avatar/{{ site.author.gravatar }}?s=400" property="og:image">
+    {% else %}
+      <meta content="/assets/{{ page.feature_img }}"" property="og:image"> 
+    {% endif %}
+    <meta content="200" property="og:image:width">
+    <meta content="200" property="og:image:height">
+    <meta content="en_US" property="og:locale">
+
+  <!-- Metadata Twitter -->
+    <meta name="twitter:card" value="summary">
+    <meta content="{{ page.title }}"" name="twitter:title">
+    <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}' name='twitter:description">
+    <meta content="@{{ site.twitter_username }}" name="twitter:creator">
+
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = custom_url | default: site.github.url %}
   {% css style %}

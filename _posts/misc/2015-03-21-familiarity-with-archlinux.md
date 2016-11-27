@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [arch, linux]
 title:        Familiarity with archlinux
-description:  description
 feature_img:  2015/03/ArchlinuxLogo2.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Hello world! I want to tell about the Linux-distribution Archlinux and guide you explaining the distribution of ideology. In this post, I have the example of Ubuntu will tell about advantages and disadvantages of the system and briefly tell you about the basic concepts of distribution and how it works. 

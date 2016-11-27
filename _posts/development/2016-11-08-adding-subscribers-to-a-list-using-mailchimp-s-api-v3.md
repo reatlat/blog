@@ -3,8 +3,12 @@ layout:       post
 categories:   development
 tags:         [php, api, mailchimp]
 title:        Adding subscribers to a list using Mailchimp's API v3
-description:  description
 feature_img:  2016/11/mailchimp.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Based on the [List Members Instance docs][0], the easiest way is to use a PUT request which according to the docs either "adds a new list member or updates the member if the email already exists on the list".

@@ -3,8 +3,12 @@ layout:       post
 categories:   general
 tags:         [about, my life, blog]
 title:        My first post & the most important thing you should know about me =)
-description:  description
 feature_img:  2015/03/first-post.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Hello world!

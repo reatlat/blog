@@ -3,8 +3,12 @@ layout:       post
 categories:   notes
 tags:         [crypt, freedom, goodreeds, internet, reading,list,security]
 title:        Freedom and the Future of the Internet
-description:  description
 feature_img:  2015/05/16153182.jpg
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 Often there are articles and publications on the issue of spying on the Internet. Then briefly thought about trying to use the program for encoding messages and information flow. And finally she calmed down. The reason appeared one and the same thought: I have nothing to hide.

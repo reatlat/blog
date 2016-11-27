@@ -3,8 +3,12 @@ layout:       post
 categories:   misc
 tags:         [chromium, linux, security, tweak]
 title:        How to Set Chromium into Private (Incognito) Mode by Default
-description:  description
 feature_img:  2015/04/Chromium-Private.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 If you like Chromium and keeping your browsing private, use Incognito mode. you can always use that mode by clicking "New incognito window" from the menu or by just pressing Ctrl + Shift + N. 

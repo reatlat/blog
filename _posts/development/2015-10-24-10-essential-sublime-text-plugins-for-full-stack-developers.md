@@ -3,8 +3,12 @@ layout:       post
 categories:   development
 tags:         [tools, sublime, plugins]
 title:        10 Essential Sublime Text Plugins for Full-Stack Developers
-description:  description
 feature_img:  2015/10/Sublime_Text_Logo.png
+sitemap:
+  lastmod:    2016-11-27T20:30:35
+  priority:   0.5
+  changefreq: monthly
+  exclude:    'no'
 ---
 
 When I started with web development a few years ago, Vim was my first choice of text editor. It was easy to work with and I could get the basics done without much hassle. Also, many developers like terminal based text editors because they get the same environment in both their local development machines and remote servers. In spite of the “[Vim vs Emacs][0]” debate out there, about a year ago I decided to try out a native text editor and Twitter was abuzz with one of them (no prizes for the guessing which one.)
