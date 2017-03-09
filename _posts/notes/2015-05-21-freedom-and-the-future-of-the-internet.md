@@ -58,3 +58,11 @@ And nothing more.
 
 [0]: http://www.amazon.com/Cypherpunks-Julian-Assange-ebook/dp/B00AZBI4IO/
 {:rel="nofollow" target="_blank"}
+
+
+
+
+/usr/bin/light-locker &
+echo "X session wrapper complete, running session $@"
+
+exec $@
