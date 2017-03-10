@@ -29,7 +29,7 @@ module Jekyll
   module WebfontsPlugin
     class Tag < Liquid::Tag
 
-      LINK_TEMPLATE = '<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=%s">'
+      LINK_TEMPLATE = '<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=%s">'
 
       def render context
         LINK_TEMPLATE % @markup.split(" ").map(&:strip).join("|")
