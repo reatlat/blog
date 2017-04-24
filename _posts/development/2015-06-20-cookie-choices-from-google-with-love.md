@@ -20,7 +20,7 @@ Good news for users of the [blogger][1] platform, there is no need to install th
 This post is about how to set up a new approach to informing website visitors.
 If you are the owner of the site on a platform [blogger][1] then you are lucky and have appeared at the top of the site here is an informational message.
 
-![](/images/posts/2015/06/cookieconsent.jpg)
+![](/assets/posts/2015/06/cookieconsent.jpg)
 
 If you do not use cookies, and then you can disable this message but you are risking to violate privacy laws in Europe ... All you need to add in the tags `<head>.....</head>` following code ...
 
@@ -40,7 +40,7 @@ cookieOptions = {"msg": "Please note this website uses cookies enabling us to gi
 ```
 After your message will have this kind of..
 
-![]({/images/posts/2015/06/2015-07-29--1438161535_1100x147_scrot.png)
+![]({/assets/posts/2015/06/2015-07-29--1438161535_1100x147_scrot.png)
 
 *document.cookie = cookieName + '=y; path=/; expires=' + expiryDate.toGMTString();* - this need for setting cookies path and life time.
 

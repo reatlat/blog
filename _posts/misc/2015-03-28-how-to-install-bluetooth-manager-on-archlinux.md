@@ -30,6 +30,6 @@ Then make autostart application "blueman-applet" on your desktop environment or 
 
 After all these manipulations you have a working blueman-manager
 
-![](/images/posts/2015/03/blueman.png)
+![](/assets/posts/2015/03/blueman.png)
 
 That's it enjoy.

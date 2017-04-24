@@ -23,7 +23,7 @@ For years Blogger hasn’t really kept up for years with the modern web, so I fi
 
 ### Jekyll begins
 
-![](/images/posts/2016/10/jekyll-begins.jpg)
+![](/assets/posts/2016/10/jekyll-begins.jpg)
 
 I'm still need finish some of the outstanding issues with my current blog setup...
 

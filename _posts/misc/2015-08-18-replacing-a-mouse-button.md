@@ -19,8 +19,8 @@ Today I received a package from AliExpress OMRON new buttons for my Logitech mou
 
 To repair it took me not more than 5 minutes and a cup of coffee =)
 
-![](/images/posts/2015/08/replacing-mouse-button-1.jpg)
-![](/images/posts/2015/08/replacing-mouse-button-2.jpg)
-![](/images/posts/2015/08/replacing-mouse-button-3.jpg)
+![](/assets/posts/2015/08/replacing-mouse-button-1.jpg)
+![](/assets/posts/2015/08/replacing-mouse-button-2.jpg)
+![](/assets/posts/2015/08/replacing-mouse-button-3.jpg)
 
 Now, the mouse works just like new! I must say the left button works much quieter than the right(original).

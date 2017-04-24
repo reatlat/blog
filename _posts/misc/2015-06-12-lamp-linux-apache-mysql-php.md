@@ -99,7 +99,7 @@ AddType application/x-httpd-php .htm
 
 And now restart httpd...
 
-![](/images/posts/2015/06/2015-06-05--1433499807_768x461_scrot.png)
+![](/assets/posts/2015/06/2015-06-05--1433499807_768x461_scrot.png)
 
 WTF?
 

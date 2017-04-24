@@ -19,12 +19,12 @@ It's very easy.
 Go to "Settings › Posts and comments"
 And swich-off lightBox
 
-<img src="assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-1.png">
+<img src="/assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-1.png">
 
 **Step 2:**
 Go to Template tab and click "Edit HTML"
 
-<img src="assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-2.png">
+<img src="/assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-2.png">
 
 **Step 3:**
 Insert before tag  `</body>` script below, and save template.

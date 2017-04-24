@@ -23,33 +23,33 @@ However, you should go through that process exactly once, because there exists a
 It’s like apt-get for Ubuntu, pip for Python and npm for node.js.
 Follow the installation instructions here and you won’t have to install another plugin manually ever again.
 
-<img src="assets/posts/2015/10/packagemgr.png">
+<img src="/assets/posts/2015/10/packagemgr.png">
 
 To verify that it’s been correctly installed, press Ctrl/Cmd + Shift + p and type in ‘package control’ — you should be able to view a list of options.
 
 ### [Git][3]
 These days, more often than not, you are going to work with a version control software, and the most popular VCS is Git. Are you tired of saving your text files and switching back to the terminal to run a few Git commands. Wouldn’t it be nice if you could execute Git commands from the text editor itself? Install the Git plugin and get more done in less time!
 
-<img src="assets/posts/2015/10/gitsublime.png">
+<img src="/assets/posts/2015/10/gitsublime.png">
 
 ### [GitGutter][4]
 Although you can run Git commands from within Sublime Text, why check the differences in a file from the last commit by running a separate command when you can view it in real time?
 
 With GitGutter, you can see which lines have been added, deleted or modified in the gutter.
 
-<img src="assets/posts/2015/10/Gitgutter.png">
+<img src="/assets/posts/2015/10/Gitgutter.png">
 
 ### [Emmet][5]
 Emmet is a useful plugin that saves time by making you write less, thus increasing your productivity. Emmet is available for other text editors like Notepad++ and Eclipse.
 
 There are a [lot of things][6] that you can accomplish with Emmet, but I will just tell you my favorite here. Typehtml:5 and press Ctrl/Cmd + e, and it is expanded to a basic HTML 5 page template. Simple!
 
-<img src="assets/posts/2015/10/emmet.png">
+<img src="/assets/posts/2015/10/emmet.png">
 
 ### [AllAutocomplete][7]
 Sublime Text’s default autocomplete considers words that are present in the current file only. The AllAutocomplete plug-in, however, searches all open files to find matches while suggesting words.
 
-<img src="assets/posts/2015/10/AllAutocomplete-demo.png">
+<img src="/assets/posts/2015/10/AllAutocomplete-demo.png">
 
 ### [Terminal][8]
 Just in case you want to open a terminal in the directory of your current file, this plugin can be of use. However, by default, it sets Ctrl/Cmd + Shift + t as the shortcut for opening the terminal, which is also the shortcut to open the last closed file. You should change either of the shortcuts to be able to use both functionalities!
@@ -57,22 +57,22 @@ Just in case you want to open a terminal in the directory of your current file, 
 ### [SublimeREPL][9]
 This is probably the most useful plugin for programmers. SublimeREPL lets you run an interpreter of a range of languages (NodeJS, Python, Ruby, Scala and Haskell to name a few) right inside Sublime Text. Let us run a Python interpreter and see if it works. Perform some list checks and computed 48 raised to the power 100.
 
-<img src="assets/posts/2015/10/REPL.png">
+<img src="/assets/posts/2015/10/REPL.png">
 
 ### [ColorPicker][10]
 Usually, if you want to use a color picker you probably open Photoshop or GIMP and use the built-in color picker there. The ColorPicker plugin lets you use a color picker within Sublime Text! After installation, just press Ctrl/Cmd + Shift + c.
 
-<img src="assets/posts/2015/10/colorpicker.png">
+<img src="/assets/posts/2015/10/colorpicker.png">
 
 ### [Markdown Preview][11]
 Although many developers prefer to create Markdown files in the cloud (GitHub Gists, StackEdit, Markable), this is for the ‘old school’ writers who prefer to keep their files locally. Although MarkdownPreview is primarily to preview Markdown files, you can go one step further and install [MarkdownEditing][12], which gives you proper color highlighting.
 
-<img src="assets/posts/2015/10/markdown.png">
+<img src="/assets/posts/2015/10/markdown.png">
 
 ### [DocBlockr][13]
 If you follow coding guidelines strictly, this is one plugin that makes your task easier. DocBlokr helps you in creating proper comments for your code, by parsing the functions, parameters, variables, and automatically adding the basic items. Start with “/**” and DocBlockr does the rest for you. For instance, check how DocBlockr makes my life easier by creating a format for me to fill based on my comment.
 
-<img src="assets/posts/2015/10/DocBlockr.png">
+<img src="/assets/posts/2015/10/DocBlockr.png">
 
 With this, we come to the end of our list of plugins to boost your productivity. Did we miss out any important ones? Do let us know your favorites in the comments below.
 
