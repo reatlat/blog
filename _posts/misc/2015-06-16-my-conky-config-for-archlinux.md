@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [conky, linux, arch]
 title:        My conky config for ArchLinux
-feature_img:  2015/06/conky.png
+feature_img:  posts/2015/06/conky.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

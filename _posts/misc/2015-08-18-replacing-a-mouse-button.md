@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [fix, hardware, mouse, repair, soldering]
 title:        Replacing a mouse button
-feature_img:  2015/08/replacing-mouse-button-0.jpg
+feature_img:  posts/2015/08/replacing-mouse-button-0.jpg
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
@@ -19,8 +19,8 @@ Today I received a package from AliExpress OMRON new buttons for my Logitech mou
 
 To repair it took me not more than 5 minutes and a cup of coffee =)
 
-![]({% asset_path 2015/08/replacing-mouse-button-1.jpg %})
-![]({% asset_path 2015/08/replacing-mouse-button-2.jpg %})
-![]({% asset_path 2015/08/replacing-mouse-button-3.jpg %})
+![](/images/posts/2015/08/replacing-mouse-button-1.jpg)
+![](/images/posts/2015/08/replacing-mouse-button-2.jpg)
+![](/images/posts/2015/08/replacing-mouse-button-3.jpg)
 
 Now, the mouse works just like new! I must say the left button works much quieter than the right(original).

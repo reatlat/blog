@@ -3,7 +3,7 @@ layout:       post
 categories:   notes
 tags:         [crypt, freedom, goodreeds, internet, reading,list,security]
 title:        Freedom and the Future of the Internet
-feature_img:  2015/05/16153182.jpg
+feature_img:  posts/2015/05/16153182.jpg
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

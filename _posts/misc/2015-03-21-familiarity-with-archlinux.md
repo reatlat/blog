@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, linux]
 title:        Familiarity with archlinux
-feature_img:  2015/03/ArchlinuxLogo2.png
+feature_img:  posts/2015/03/ArchlinuxLogo2.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
@@ -48,7 +48,7 @@ In my opinion, the software for the most part determine the distribution. What i
 Most people are used to the standard model updates. First release system is available either Windows or Ubuntu, and then you come to a minor update with security patches or bug fixes. In Arch are all a little different. There is no concept of the release system in principle. Packets appear daily, and you can use the latest versions immediately. This is so to speak a constantly updated distribution, from what is lost neobhost make new versions in the form of installation images.
 
 
-![]({% asset_path 2015/03/pacman.png %})
+![](/images/posts/2015/03/pacman.png)
 
 #### Pacman and AUR
 

@@ -21,7 +21,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {% if page.feature_img %}
       <div class="post-featured_img-container">
-        <img class="post-featured_img" src="{% asset_path '{{ page.feature_img }}' %}">
+        <img class="post-featured_img" src="/assets/{{ page.feature_img }}">
       </div><!-- /.post-featured_img -->
     {% endif %}
     {{ content }}

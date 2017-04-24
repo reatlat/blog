@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [ubuntu, arch, linux, new]
 title:        Goodbye Ubuntu and welcome back Arch
-feature_img:  2016/11/arch_vs_ubuntu.jpg
+feature_img:  posts/2016/11/arch_vs_ubuntu.jpg
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

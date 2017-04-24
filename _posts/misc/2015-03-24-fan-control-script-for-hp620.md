@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, bash, fan, hp620, linux, script, tweak]
 title:        Fan control script for hp620
-feature_img:  2015/03/cooling-fan-inside-laptop.jpg
+feature_img:  posts/2015/03/cooling-fan-inside-laptop.jpg
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

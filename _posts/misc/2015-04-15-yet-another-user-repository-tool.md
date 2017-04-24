@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, linux, pacman, yaourt]
 title:        Yet AnOther User Repository Tool
-feature_img:  2015/04/pot-yaourt.png
+feature_img:  posts/2015/04/pot-yaourt.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

@@ -3,7 +3,7 @@ layout:       post
 categories:   development
 tags:         [javascript, fancybox2, blogger, blogspot]
 title:        Add fancyBox2 to Blogger/BlogSpot
-feature_img:  2015/11/add-fancybox2-to-blogger-blogspot-0.png
+feature_img:  posts/2015/11/add-fancybox2-to-blogger-blogspot-0.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
@@ -19,12 +19,12 @@ It's very easy.
 Go to "Settings › Posts and comments"
 And swich-off lightBox
 
-{% img 2015/11/add-fancybox2-to-blogger-blogspot-1.png %}
+<img src="assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-1.png">
 
 **Step 2:**
 Go to Template tab and click "Edit HTML"
 
-{% img 2015/11/add-fancybox2-to-blogger-blogspot-2.png %}
+<img src="assets/posts/2015/11/add-fancybox2-to-blogger-blogspot-2.png">
 
 **Step 3:**
 Insert before tag  `</body>` script below, and save template.

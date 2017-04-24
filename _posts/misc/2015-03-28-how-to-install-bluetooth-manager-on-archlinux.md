@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, bluetooth, linux, yaourt]
 title:        How to install bluetooth manager on Archlinux
-feature_img:  2015/03/bluetooth.png
+feature_img:  posts/2015/03/bluetooth.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
@@ -30,6 +30,6 @@ Then make autostart application "blueman-applet" on your desktop environment or 
 
 After all these manipulations you have a working blueman-manager
 
-![]({% asset_path 2015/03/blueman.png %})
+![](/images/posts/2015/03/blueman.png)
 
 That's it enjoy.

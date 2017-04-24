@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, linux, power, systemd, tweak]
 title:        Power management
-feature_img:  2015/11/systemd-meme.jpg
+feature_img:  posts/2015/11/systemd-meme.jpg
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, CUPS, linux, printer]
 title:        installing CUPS 2 on Arch
-feature_img:  2015/04/cups.png
+feature_img:  posts/2015/04/cups.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

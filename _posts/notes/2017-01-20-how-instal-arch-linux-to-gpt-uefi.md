@@ -3,7 +3,7 @@ layout:       post
 categories:   notes
 tags:         [linux, arch, install, guide, begine]
 title:        How Instal Arch LInux to GPT UEFI
-feature_img:  2017/01/ArchLInux_ussr.jpg
+feature_img:  posts/2017/01/ArchLInux_ussr.jpg
 sitemap:
   lastmod:    2017-01-20T23:08:37
   priority:   0.5

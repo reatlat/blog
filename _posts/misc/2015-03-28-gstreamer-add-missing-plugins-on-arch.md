@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [arch, gstreamer, linux, mp3, pacman]
 title:        Gstreamer add missing plugins on Arch
-feature_img:  2015/03/Gstreamer-logo.png
+feature_img:  posts/2015/03/Gstreamer-logo.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

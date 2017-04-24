@@ -3,7 +3,7 @@ layout:       post
 categories:   misc
 tags:         [lamp, linux, apache, mysql, php, arch]
 title:        LAMP — Linux + Apache + MySQL + PHP
-feature_img:  2015/06/lamp.gif
+feature_img:  posts/2015/06/lamp.gif
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
@@ -99,7 +99,7 @@ AddType application/x-httpd-php .htm
 
 And now restart httpd...
 
-![]({% asset_path 2015/06/2015-06-05--1433499807_768x461_scrot.png %})
+![](/images/posts/2015/06/2015-06-05--1433499807_768x461_scrot.png)
 
 WTF?
 
