@@ -1,13 +1,11 @@
 ---
 gems:
-  - jekyll-assets
-  - bourbon
   - jekyll-paginate
 
 markdown: kramdown
 kramdown:
   input: GFM
-  # parse_block_html: true
+  parse_block_html: true
   # html_to_native: true
 
 # permalink: pretty
@@ -35,22 +33,6 @@ paginate_path: '/blog/page:num'
 
 sass:
   style: compressed
-
-assets:
-  compress:
-    css: true
-    js:  true
-  sources:
-    - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/posts
-  css_compressor: sass
-  js_compressor:  uglifier
-  prefix: "/assets"
-  # digest: true
-  features:
-    liquid: true
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}

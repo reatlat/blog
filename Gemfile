@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+# ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -29,12 +29,10 @@ ruby RUBY_VERSION
 gem 'coffee-script'
 gem 'compass'
 gem 'jekyll'
-gem 'jekyll-assets'
 gem 'rake'
 # gem 'redcarpet'
 gem 'breakpoint', '~> 1.x'
 gem 'respond-to'
 gem 'jekyll-paginate'
 gem 'sass'
-gem 'bourbon'
 gem 'uglifier'
