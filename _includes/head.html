@@ -1,10 +1,12 @@
 <head>
   {% if page.noindex %}
-    <meta content="noindex" name="robots">
+  <meta content="noindex" name="robots">
   {% endif %}
+
   <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>
     {% if page.title == "Home" %}
@@ -18,47 +20,60 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- Open Graph Meta Tags -->
-    <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-    <meta content="{{ site.title }}" property="og:site_name">
-    <meta content="{{ page.title }}" property="og:title">
-    {% if page.layout == 'post' %}
-      <meta content="article" property="og:type">
-    {% else %}
-      <meta content="website" property="og:type">
-    {% endif %}
-    <meta content="{{ site.url }}/{{ page.url | replace:'index.html','' | prepend: full_base_url }}" property="og:url">
-    <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
-    {% if page.feature_img.nil? %}
-      <meta content="https://s.gravatar.com/avatar/{{ site.author.gravatar }}?s=400" property="og:image">
-    {% else %}
-      <meta content="{{ site.url }}/assets/{{ page.feature_img }}"" property="og:image"> 
-    {% endif %}
-    <meta content="200" property="og:image:width">
-    <meta content="200" property="og:image:height">
-    <meta content="en_US" property="og:locale">
+  <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{{ page.title }}" property="og:title">
+  {% if page.layout == 'post' %}
+  <meta content="article" property="og:type">
+  {% else %}
+  <meta content="website" property="og:type">
+  {% endif %}
+  <meta content="{{ site.url }}/{{ page.url | replace:'index.html','' | prepend: full_base_url }}" property="og:url">
+  <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" property="og:description">
+  {% if page.feature_img.nil? %}
+  <meta content="https://s.gravatar.com/avatar/{{ site.author.gravatar }}?s=400" property="og:image">
+  {% else %}
+  <meta content="{{ site.url }}/assets/{{ page.feature_img.source }}" property="og:image">
+  {% endif %}
+  <meta content="200" property="og:image:width">
+  <meta content="200" property="og:image:height">
+  <meta content="en_US" property="og:locale">
 
   <!-- Metadata Twitter -->
-    <meta name="twitter:card" value="summary">
-    <meta content="{{ page.title }}"" name="twitter:title">
-    <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}' name='twitter:description">
-    <meta content="@{{ site.twitter_username }}" name="twitter:creator">
+  <meta name="twitter:card" content="summary">
+  <meta content="{{ page.title }}" name="twitter:title">
+  <meta content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" name="twitter:description">
+  <meta content="@{{ site.twitter_username }}" name="twitter:creator">
 
   {% assign custom_url = site.url | append: site.baseurl %}
   {% assign full_base_url = custom_url | default: site.github.url %}
 
-  <style amp-custom>
-    {% capture include_to_scssify %}
-    {% include stylesheets/styles.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
-  </style>
+  <script type="application/ld+json">
+  {% include metadata.json %}
+  </script>
 
-  {% webfonts Quattrocento+Sans:400,700,400italic,700italic Montserrat:400,700 %}
+  <style amp-custom>
+     {% capture include_to_scssify %}
+     {% include stylesheets/styles.scss %}
+     {% endcapture %}
+     {{ include_to_scssify | scssify }}
+  </style>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: full_base_url }}">
-  
-  {% if site.google_analytics %}
-  {% include google-analytics.html %}
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  {% if content contains "</amp-youtube>" %}
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
   {% endif %}
+  {% if content contains "</amp-ad>" %}
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  {% endif %}
+  {% if content contains "</amp-iframe>" %}
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  {% endif %}
+
 </head>
