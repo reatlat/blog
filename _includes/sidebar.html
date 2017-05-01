@@ -19,7 +19,7 @@
     <div class="sidebar-personal-info">
       <div class="sidebar-personal-info__section">
         <div class="sidebar-personal-info__section__gravatar">
-          <img src="https://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=200" title="View on Gravatar" alt="View on Gravatar" />
+          {% img /assets/images/jedi_lego.png | fixed | 100x100 | Alex Zappa a.k.a. re[at]lat %}
         </div>
       </div>
       <div class="sidebar-personal-info__section">
@@ -75,9 +75,9 @@
   </nav>
 
   <div class="sidebar-item sidebar_search-box">
-    <form action="{{ full_base_url }}/search/" method="GET">
+    <form method="get" action="{{ full_base_url }}/search/"  target="_blank">
       <input class="search-box_input" placeholder="Search..." type="text" name="q" />
-      <button class="search-box_button" type="submit">{% icons search %}</button>
+      <input class="search-box_button" type="submit" value="search">
     </form>
   </div>
 </div>

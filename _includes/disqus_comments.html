@@ -4,6 +4,12 @@
   {% elsif site.github.url %}
     {% assign disqus_url = page.url | prepend: site.github.url %}
   {% endif %}
+<amp-iframe width=600 height=140
+            layout="responsive"
+            sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+            resizable
+            src={{ page.url | replace:'index.html','' | prepend: full_base_url }}#//{{ site.disqus_short_name }}.disqus.com/embed.js">
+</amp-iframe>
 
   <div id="disqus_thread"></div>
   <script>
@@ -22,7 +28,7 @@
     })();
 
     var disqus_script = 'count.js';
-      
+
     (function () {
       var dsq = document.createElement('script');
       dsq.type = 'text/javascript';
