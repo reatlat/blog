@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [arch, linux]
 title:        Familiarity with archlinux
-feature_img:  posts/2015/03/ArchlinuxLogo2.png
+feature_img:
+  source: posts/2015/03/ArchlinuxLogo2.png
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

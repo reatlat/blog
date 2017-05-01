@@ -3,7 +3,7 @@ layout:       post
 categories:   general
 tags:         [blog, jekyll, blogger, ruby, github]
 title:        Thank you Blogger by Google and good bye
-feature_img:  posts/2016/10/blogger-to-jekyll.png
+feature_img:  100x20 | posts/2016/10/blogger-to-jekyll.png
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

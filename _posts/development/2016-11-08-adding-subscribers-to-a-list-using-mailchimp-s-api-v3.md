@@ -3,7 +3,10 @@ layout:       post
 categories:   development
 tags:         [php, api, mailchimp]
 title:        Adding subscribers to a list using Mailchimp's API v3
-feature_img:  posts/2016/11/mailchimp.png
+feature_img:
+  source: posts/2016/11/mailchimp.png
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

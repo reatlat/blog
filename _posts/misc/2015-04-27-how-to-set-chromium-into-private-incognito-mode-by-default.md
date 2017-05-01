@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [chromium, linux, security, tweak]
 title:        How to Set Chromium into Private (Incognito) Mode by Default
-feature_img:  posts/2015/04/Chromium-Private.png
+feature_img:
+  source: posts/2015/04/Chromium-Private.png
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

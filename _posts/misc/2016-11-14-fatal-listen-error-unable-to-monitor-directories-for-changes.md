@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [linux, arch, ruby, rvm]
 title:        "FATAL: Listen error: unable to monitor directories for changes"
-feature_img:  posts/2016/11/nights_watch.jpg
+feature_img:
+  source: posts/2016/11/nights_watch.jpg
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

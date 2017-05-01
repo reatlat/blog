@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [upwork, linux, error, fix]
 title:        UpWork App team Issue
-feature_img:  posts/2016/02/reatlat.net_upwork.png
+feature_img:
+  source: posts/2016/02/reatlat.net_upwork.png
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

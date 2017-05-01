@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [capslock, english, russian, language, keyboard, linux]
 title:        Keyboard layout switching by CapsLock
-feature_img:  posts/2015/04/capslock.jpg
+feature_img:
+  source: posts/2015/04/capslock.jpg
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

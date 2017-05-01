@@ -3,7 +3,10 @@ layout:       post
 categories:   development
 tags:         [javascript, fancybox2, blogger, blogspot]
 title:        Add fancyBox2 to Blogger/BlogSpot
-feature_img:  posts/2015/11/add-fancybox2-to-blogger-blogspot-0.png
+feature_img:
+  source: posts/2015/11/add-fancybox2-to-blogger-blogspot-0.png
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5

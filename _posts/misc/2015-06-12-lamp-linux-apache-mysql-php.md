@@ -3,7 +3,10 @@ layout:       post
 categories:   misc
 tags:         [lamp, linux, apache, mysql, php, arch]
 title:        LAMP — Linux + Apache + MySQL + PHP
-feature_img:  posts/2015/06/lamp.gif
+feature_img:
+  source: posts/2015/06/lamp.gif
+  width:  100
+  height: 100
 sitemap:
   lastmod:    2016-11-27T20:30:35
   priority:   0.5
