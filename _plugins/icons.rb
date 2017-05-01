@@ -2,7 +2,7 @@
 #
 # Provides Liquid tag for convinient svg icons inclusion.
 #
-# Copyright (C) 2012 Alex Zappa (http://reatlat.net/)
+# Copyright (C) 2016 Alex Zappa (https://reatlat.net/)
 #
 # The MIT License
 #
