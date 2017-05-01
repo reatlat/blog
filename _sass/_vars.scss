@@ -30,11 +30,7 @@ $font-second: 'Quattrocento Sans', 'Helvetica Neue', Arial, sans-serif;
 $reverse-layout: true;
 $overlay-sidebar: false;
 
-/* Mixins */
-@mixin transit($elem: all, $time: .3s, $effect: ease) {
-  transition: $elem $time $effect;
-}
-
-@mixin material-shadow() {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
-}
+$sm: 568px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;

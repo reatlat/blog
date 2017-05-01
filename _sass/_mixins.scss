@@ -1,0 +1,20 @@
+// Rem size
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+/* Mixins */
+@mixin transit($elem: all, $time: .3s, $effect: ease) {
+  transition: $elem $time $effect;
+}
+
+@mixin material-shadow() {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .23), 0 3px 10px rgba(0, 0, 0, .16);
+}
