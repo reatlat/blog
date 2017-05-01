@@ -4,12 +4,13 @@ title: Home
 ---
 
 <div class="home-page">
+
   <div class="home-page_inner">
-  
+
     <div class="home_image_side light">
-      <img src="/assets/images/jedi_lego.png">
+      {% img /assets/images/jedi_lego.png | fixed | 180x180 | re[at]lat - real jedy %}
     </div>
-    
+
     <nav class="home-page_nav">
       {% for nav in site.nav %}
         {% assign is_relative = nav[1][0] | slice: 0 %}

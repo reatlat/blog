@@ -11,25 +11,23 @@ title: Blog
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% if site.disqus_short_name %} | 
     <a class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ post.url }}" href="{{ site.url }}{{ post.url }}#disqus_thread"><!--count-->0 Comments</a>
     {% endif %}
     {% if post.categories %} | 
-    <a href="{{ site.baseurl }}{{ site.category_page }}#{{ post.categories[0] | slugify }}" class="post-tag">{% icons slack %}  {{ post.categories[0] }}</a>
+    <a href="{{ site.baseurl }}{{ site.category_page }}#{{ post.categories[0] | slugify }}" class="post-tag"># {{ post.categories[0] }}</a>
     {% endif %}
     {% if post.tags %} | 
     {% for tag in post.tags %}
-    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{% icons tag %}  {{ tag }}</a>
+    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag"># {{ tag }}</a>
     {% endfor %}
     {% endif %}
 
     <article>
-
-    {% if post.feature_img %}
+    {% if post.feature_img.source %}
       <div class="post-featured_img-container">
-        <img class="post-featured_img" src="/assets/{{ post.feature_img }}">
+        <amp-img class="post-featured_img" src="/assets/{{ post.feature_img.source }}" width="{{ post.feature_img.width }}" height="{{ post.feature_img.height }}" layout="fixed"></amp-img>
       </div><!-- /.post-featured_img -->
     {% endif %}
 
