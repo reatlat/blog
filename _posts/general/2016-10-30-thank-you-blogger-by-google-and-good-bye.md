@@ -9,6 +9,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 287af6c3-b0ea-475b-8221-555ecb1c9d63
 ---
 
 I recently made the move from [Blogger][0] to [Jekyll][1], hosted on [Github Pages][2]. It was a pretty pleasant conversion too, as Jekyll has a good amount of documenation and support.

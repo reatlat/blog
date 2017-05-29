@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 3b9a54d2-86ed-4aa8-9091-9e71ae7bf020
 ---
 
 Based on the [List Members Instance docs][0], the easiest way is to use a PUT request which according to the docs either "adds a new list member or updates the member if the email already exists on the list".

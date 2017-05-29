@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: a38db807-9743-4937-be2d-1ead20fcd6c3
 ---
 
 We need the packages from the repository community 

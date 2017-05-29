@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: ad15517e-2e0a-4c42-b301-462008764841
 ---
 
 Apache - the most popular web server. Its task like any other Web server - to send content to client requests. Apache has a great functionality through plug-ins.

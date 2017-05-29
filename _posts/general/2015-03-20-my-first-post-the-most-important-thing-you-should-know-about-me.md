@@ -9,6 +9,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: c52a959b-c390-4f50-bc0e-33c2c4f9ee76
 ---
 
 Hello world!

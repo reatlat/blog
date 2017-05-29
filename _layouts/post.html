@@ -21,7 +21,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {% if page.feature_img %}
       <div class="post-featured_img-container">
-        <amp-img class="post-featured_img" src="/assets/{{ page.feature_img.source }}" width="{{ page.feature_img.width }}" height="{{ page.feature_img.height }}" layout="fixed"></amp-img>
+        <amp-img class="post-featured_img" src="/assets/{{ page.feature_img.source }}" width="{{ page.feature_img.width }}" height="{{ page.feature_img.height }}" layout="responsive"></amp-img>
       </div><!-- /.post-featured_img -->
     {% endif %}
     {{ content }}

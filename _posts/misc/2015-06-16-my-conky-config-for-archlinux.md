@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 24fdc9af-2328-4286-8151-377236f380bd
 ---
 
 This is my simple conky config for Arch Linux hp620 

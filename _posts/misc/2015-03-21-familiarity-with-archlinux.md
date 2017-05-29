@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 3045c9da-8824-4cb1-bcdf-b40935131667
 ---
 
 Hello world! I want to tell about the Linux-distribution Archlinux and guide you explaining the distribution of ideology. In this post, I have the example of Ubuntu will tell about advantages and disadvantages of the system and briefly tell you about the basic concepts of distribution and how it works. 

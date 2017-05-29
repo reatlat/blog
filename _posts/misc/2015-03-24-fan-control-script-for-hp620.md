@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 076e97a2-872d-41e2-b864-86f6e16e9b4b
 ---
 
 Hello world! Today I share a little note to my old laptop hp620. The fact that Arch is not correctly manages the cpu fan, and constantly running at high speed and creates a lot of noise.

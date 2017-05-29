@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 59bbed71-2539-419a-ab42-3e3d32859212
 ---
 
 Logitech Mouse Model M-RCQ142 White was purchased by mistake =) I wanted to buy the same black but mistakenly bought white =)

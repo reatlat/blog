@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: c7b5c568-2a03-40f4-acf7-7036e348bfba
 ---
 
 This is for an ArchLinux or Arch based linux distro.

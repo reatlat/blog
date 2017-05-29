@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 36469f25-dfa3-4217-9e06-ac8e1e4d03dd
 ---
 
 Today I have a small issue with managment my blog in my new linux(ARCH) machine

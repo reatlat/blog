@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 83f5e2d0-f09a-4c87-8412-36f43c5430da
 ---
 
 If you like Chromium and keeping your browsing private, use Incognito mode. you can always use that mode by clicking "New incognito window" from the menu or by just pressing Ctrl + Shift + N. 

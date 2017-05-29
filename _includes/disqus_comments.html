@@ -4,39 +4,11 @@
   {% elsif site.github.url %}
     {% assign disqus_url = page.url | prepend: site.github.url %}
   {% endif %}
-<amp-iframe width=600 height=140
+<amp-iframe width=600 height=240
             layout="responsive"
-            sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
+            sandbox="allow-scripts allow-same-origin allow-modals allow-popups"
             resizable
-            src={{ page.url | replace:'index.html','' | prepend: full_base_url }}#//{{ site.disqus_short_name }}.disqus.com/embed.js">
+            src="https://cdn.rawgit.com/maxxeight/disqusAMP/master/disqus-amp.html?shortname={{site.disqus_short_name}}&url={{site.url}}{{ page.url | replace:'index.html','' | prepend: full_base_url }}">
+  <div overflow tabindex=0 role=button aria-label="Disqus Comments">Disqus Comments</div>
 </amp-iframe>
-
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '{{ disqus_url }}';
-      this.page.identifier = '{{ disqus_url }}';
-    };
-
-    (function() {
-      var d = document, s = d.createElement('script');
-
-      s.src = 'https://{{ site.disqus_short_name }}.disqus.com/embed.js';
-
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-
-    var disqus_script = 'count.js';
-
-    (function () {
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = 'https://{{ site.disqus_short_name }}.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 {% endif %}

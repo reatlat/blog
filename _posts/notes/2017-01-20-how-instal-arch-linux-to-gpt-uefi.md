@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 7ab2807f-5b09-4956-a180-91a71dcb67b7
 ---
 
 First one download last one image from arch linux

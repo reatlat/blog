@@ -27,7 +27,7 @@ title: Blog
     <article>
     {% if post.feature_img.source %}
       <div class="post-featured_img-container">
-        <amp-img class="post-featured_img" src="/assets/{{ post.feature_img.source }}" width="{{ post.feature_img.width }}" height="{{ post.feature_img.height }}" layout="fixed"></amp-img>
+        <amp-img class="post-featured_img" src="/assets/{{ post.feature_img.source }}" width="{{ post.feature_img.width }}" height="{{ post.feature_img.height }}" layout="responsive"></amp-img>
       </div><!-- /.post-featured_img -->
     {% endif %}
 

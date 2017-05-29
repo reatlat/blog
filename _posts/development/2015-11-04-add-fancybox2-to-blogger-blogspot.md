@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 5308f3f3-386c-40e0-8601-f2d0f7adb8e2
 ---
 
 If you use Blogger platform by default you have lightBox.

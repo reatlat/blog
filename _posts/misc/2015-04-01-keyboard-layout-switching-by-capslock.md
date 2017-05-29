@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 1ca9df11-e389-45e5-8158-7795f396e77e
 ---
 
 As a software developer and true introvert, I type a lot.

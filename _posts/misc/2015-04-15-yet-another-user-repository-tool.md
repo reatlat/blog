@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: d3db2dd2-9722-4283-a26a-ced11fb08da4
 ---
 
 Archlinux still used console package manager pacman. Although attempts to create a GUI console remains the most convenient way to install / uninstall / update program in Archlinux.

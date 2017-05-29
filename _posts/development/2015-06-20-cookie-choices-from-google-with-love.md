@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: a4f01a6b-bf1e-440f-95dc-6f9617bf3523
 ---
 
 Google created for us a wonderful simple and easy JavaScript to alert users that the site uses cookies.

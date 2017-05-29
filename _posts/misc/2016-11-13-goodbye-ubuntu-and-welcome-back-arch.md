@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 7aa65029-eef7-458a-af42-6e7069cb55a7
 ---
 
 At the end of 2015 I decided to go out from Arch Linux to Ubuntu Linux.

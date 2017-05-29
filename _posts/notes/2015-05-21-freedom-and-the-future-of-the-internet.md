@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 13adbe72-3ccc-4b44-9f5e-dfc71ccfcaa8
 ---
 
 Often there are articles and publications on the issue of spying on the Internet. Then briefly thought about trying to use the program for encoding messages and information flow. And finally she calmed down. The reason appeared one and the same thought: I have nothing to hide.

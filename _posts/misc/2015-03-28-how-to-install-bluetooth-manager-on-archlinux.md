@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: afcb33a4-5543-463d-bd60-3ff35fc6d473
 ---
 
 If you have bluetooth and want to use it on Archlinux you need to install the packages. Bluetooth on linux using Bluez protocol stack.

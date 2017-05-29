@@ -12,6 +12,7 @@ sitemap:
   priority:   0.5
   changefreq: monthly
   exclude:    'no'
+uuid: 56f2a1d2-6e05-4918-8e00-ad859c93ab09
 ---
 
 
