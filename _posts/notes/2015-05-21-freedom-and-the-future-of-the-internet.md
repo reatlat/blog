@@ -60,9 +60,3 @@ And nothing more.
 {:rel="nofollow" target="_blank"}
 
 
-
-
-/usr/bin/light-locker &
-echo "X session wrapper complete, running session $@"
-
-exec $@

@@ -388,17 +388,41 @@ You now have brand new Arch Linux on your Laptop.
 
 
 links for source.... will be edit little bit later.
+
 https://wiki.archlinux.org/index.php/Multilib
+
 https://wiki.archlinux.org/index.php/bumblebee
+
 https://bbs.archlinux.org/viewtopic.php?id=209554
+
 https://wiki.archlinux.org/index.php/Microcode
+
 https://wiki.archlinux.org/index.php/ASUS_Zenbook_Pro_UX501
+
 https://www.ostechnix.com/install-yaourt-arch-linux/
+
 https://wiki.archlinux.org/index.php/ASUS_Zenbook_Pro_UX501
+
 https://wiki.archlinux.org/index.php/Installation_guide#Testing_if_you_are_booted_into_UEFI_mode
+
 https://bbs.archlinux.org/viewtopic.php?id=169025
+
 http://blog.felhamed.com/arch-linux/
+
 https://www.ostechnix.com/how-to-install-arch-linux-2016-02-01/
+
 https://gist.github.com/mattiaslundberg/8620837
+
 http://www.cio.com/article/3098030/linux/how-to-install-arch-linux-on-dell-xps-13-2016-in-7-steps.html#slide2
+
 http://www.bhartiya.io/always-updated-arch-linux-tutorial/30411/4#page-content
+
+
+Just note
+
+```
+/usr/bin/light-locker &
+echo "X session wrapper complete, running session $@"
+
+exec $@
+```
