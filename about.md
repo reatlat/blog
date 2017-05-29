@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![]({% asset_path alex--banner.jpg %})
+
 Hi my name is Alexander or as my friends call me just Alex! I'm Geek that enjoys solving problems, technology, software development, food, reading, photography, blogging, and traveling.
 
 I've been blessed in my career to work on large scale projects in the US, Spain, Australia, and Russia.
