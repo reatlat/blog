@@ -74,7 +74,7 @@ task :publish => [:generate] do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -a -m #{message.inspect}"
     system "git remote add origin git@github.com:reatlat/blog.git"
-    system "git push origin gh-pages --force"
+    system "git push -f origin master:gh-pages"
     if_exit('done')
   end
 end
