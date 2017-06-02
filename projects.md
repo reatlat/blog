@@ -6,7 +6,9 @@ permalink: /projects/
 
 ### Mammoth Hunters - scope project
 
-
+Fitness app for Androyd and iOS.<br>
+Development of the front end of the fit.<br>
+Develop a website from scratch, integrate with the application and also blog API for the application.
 
 Link: [https://mhunters.com/][4]
 
@@ -45,7 +47,7 @@ WordPress theme designed and developed from scratch
 Link: [https://goboardup.com/][3]
 
 ---
-
+<br><br>
 
 [0]:https://etsytools.net/
 {:target="_blank"}
